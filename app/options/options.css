@@ -1,0 +1,8 @@
+.main-container {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.title {
+  font-size: 1.2rem;
+}

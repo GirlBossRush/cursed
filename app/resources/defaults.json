@@ -1,18 +1,22 @@
 {
   "curses": {
     "blur": {
+      "description": "Text becomes blurrier.",
       "isEnabled": false,
       "name": "Blur"
     },
     "shyButtons": {
+      "description": "Buttons shy away from the cursor.",
       "isEnabled": false,
       "name": "Shy Buttons"
     },
     "tilt": {
+      "description": "The page gradually tilts right.",
       "isEnabled": true,
       "name": "Tilt"
     },
     "zalgo": {
+      "description": "'Zalgo' text randomly appears for just a moment.",
       "isEnabled": true,
       "name": "Zalgo"
     }

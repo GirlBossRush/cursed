@@ -9,14 +9,13 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "default_locale": "en",
   "background": {
     "scripts": [
       "dist/background.js"
     ],
     "persistent": true
   },
-  "options_page": "app/options_custom/index.html",
+  "options_page": "app/options/options.html",
   "permissions": [
     "storage"
   ],

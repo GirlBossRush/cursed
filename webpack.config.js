@@ -8,13 +8,16 @@ exports.devtool = "source-map"
 
 exports.entry = {
   inject: "./app/inject.js",
-  background: "./app/background.js"
+  background: "./app/background.js",
+  options: "./app/options.jsx"
 }
 
 exports.module = {
   loaders: [
+    {test: /\.css$/, loader: "style-loader?singleton!css-loader"},
     {test: /\.json$/, loader: "json-loader", exclude: [/node_modules/]},
-    {test: /\.js$/, loader: "babel-loader?optional=runtime", exclude: [/node_modules/]}
+    {test: /\.js$/, loader: "babel-loader?optional=runtime", exclude: [/node_modules/]},
+    {test: /\.jsx$/, loaders: ["babel-loader?optional=runtime"], exclude: [/node_modules/]}
   ],
   noParse: /\.min\.js/
 }
@@ -43,7 +46,6 @@ exports.resolve = {
 
 if (ENVIRONMENT === "development") {
   exports.debug = true
-  exports.devtool = "eval"
 
   exports.devServer = {
     contentBase: "./dist/"
