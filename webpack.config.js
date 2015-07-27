@@ -7,12 +7,13 @@ var
 exports.devtool = "source-map"
 
 exports.entry = {
-  inject: "./src/inject.js",
-  background: "./src/background.js"
+  inject: "./app/inject.js",
+  background: "./app/background.js"
 }
 
 exports.module = {
   loaders: [
+    {test: /\.json$/, loader: "json-loader", exclude: [/node_modules/]},
     {test: /\.js$/, loader: "babel-loader?optional=runtime", exclude: [/node_modules/]}
   ],
   noParse: /\.min\.js/

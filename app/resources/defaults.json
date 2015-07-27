@@ -1,0 +1,21 @@
+{
+  "curses": {
+    "blur": {
+      "isEnabled": false,
+      "name": "Blur"
+    },
+    "shyButtons": {
+      "isEnabled": false,
+      "name": "Shy Buttons"
+    },
+    "tilt": {
+      "isEnabled": true,
+      "name": "Tilt"
+    },
+    "zalgo": {
+      "isEnabled": true,
+      "name": "Zalgo"
+    }
+  },
+  "occurance": 1.0
+}
